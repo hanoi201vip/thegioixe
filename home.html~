@@ -1,0 +1,222 @@
+//homes<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<script>
+var validateForm = function(){
+var username=loginForm.username.value;
+var password = loginForm.password.value;
+if(username != "" && password != ""){
+var msg = document.getElementById("msg");
+msg.innerHTML = "";
+return true;
+}else{
+var msg = document.getElementById("msg");
+msg.innerHTML = "<b style='color:red'>Please fill your username and password</b>"
+return false;
+}
+}
+</script>
+
+
+</head>
+
+<body>
+<form id="loginForm" name="loginForm" onsubmit="return validateForm()">
+ Username
+ <input type="text" name="username"/>
+ <br />
+ Password
+ <input type="password" name="password"/>
+ <br />
+ <span id="msg"></span>
+ <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
+login.html
+
+1 trong 2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<script>
+var validateForm = function(){
+var username=loginForm.username.value;
+var password = loginForm.password.value;
+if(username != "" && password != ""){
+var msg = document.getElementById("msg");
+msg.innerHTML = "";
+return true;
+}else{
+var msg = document.getElementById("msg");
+msg.innerHTML = "<b style='color:red'>Please fill your username and password</b>"
+return false;
+}
+}
+</script>
+
+
+</head>
+
+<body>
+<form id="loginForm" name="loginForm" onsubmit="return validateForm()">
+ Username
+ <input type="text" name="username"/>
+ <br />
+ Password
+ <input type="password" name="password"/>
+ <br />
+ <span id="msg"></span>
+ <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
+login.html
+
+1 trong 2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<script>
+var validateForm = function(){
+var username=loginForm.username.value;
+var password = loginForm.password.value;
+if(username != "" && password != ""){
+var msg = document.getElementById("msg");
+msg.innerHTML = "";
+return true;
+}else{
+var msg = document.getElementById("msg");
+msg.innerHTML = "<b style='color:red'>Please fill your username and password</b>"
+return false;
+}
+}
+</script>
+
+
+</head>
+
+<body>
+<form id="loginForm" name="loginForm" onsubmit="return validateForm()">
+ Username
+ <input type="text" name="username"/>
+ <br />
+ Password
+ <input type="password" name="password"/>
+ <br />
+ <span id="msg"></span>
+ <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
+login.html
+
+1 trong 2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<script>
+var validateForm = function(){
+var username=loginForm.username.value;
+var password = loginForm.password.value;
+if(username != "" && password != ""){
+var msg = document.getElementById("msg");
+msg.innerHTML = "";
+return true;
+}else{
+var msg = document.getElementById("msg");
+msg.innerHTML = "<b style='color:red'>Please fill your username and password</b>"
+return false;
+}
+}
+</script>
+
+
+</head>
+
+<body>
+<form id="loginForm" name="loginForm" onsubmit="return validateForm()">
+ Username
+ <input type="text" name="username"/>
+ <br />
+ Password
+ <input type="password" name="password"/>
+ <br />
+ <span id="msg"></span>
+ <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
+login.html
+
+1 trong 2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>r1</title>
+<script language="javascript">
+var validateForm=function (){
+var email=r1.email.value;
+var pw=r1.pw.value;
+
+//Check requiered
+if(email == ""){
+document.getElementById("TinNhanthu").innerHTML="<p style='background-color:blue; color:red;'>M���i b���n nh���p email</p>";
+return false;
+}
+
+//Check correct
+var pattern=/^[a-z]{3,19}@fpt$/i;
+if(!pattern.test(email)){
+document.getElementById("TinNhanthu").innerHTML="<p style='background-color:blue; color:red;'>M���i b���n nh���p email c���a fpt aptech</p>";
+return false;
+}
+
+
+
+
+}
+
+var deleteMessage = function (){
+document.getElementById("TinNhanthu").innerHTML="";
+}
+</script>
+</head>
+
+<body>
+<form name="r1" onsubmit="return validateForm()">
+<table align="center">
+    <tr>
+      <td colspan="2">r1 form</td>
+     </tr>
+    <tr>
+       <td>email</td>
+       <td><input type="email" name="email" onfocus="deleteMessage()"
+       onblur="validateForm()"
+       /></td>
+       <td><span id="TinNhanthu"></span></td>
+     </tr>
+     <tr>
+       <td>password</td>
+       <td><input type="password" name="pw"/></td>
+</tr>
+     <tr>
+     <td></td>
+     <td>
+   <input type="submit"/>
+   </td>
+   </tr>
+   </table>  
+ </form>
+</body>
+</html>
+
