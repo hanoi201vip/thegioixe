@@ -1,0 +1,123 @@
+body{
+    font-family: Arial, Tahoma;
+    font-size: 12px;
+}
+
+#main{
+    width: 992px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#banner{
+    height: 130px;
+    background-color: green;
+    margin-bottom:5px;
+}
+#banner-left{
+    border: 1px solid #004C00;
+    height: 130px;
+    width: 210px;
+    float: left;
+}
+#banner-right{
+    border: 1px solid #004C00;
+    height: 130px;
+    width: 778px;
+    float: right;
+}
+#menu{
+     height: 30px;
+     border: 1px solid #CDCDCD;
+     background-color: #F5F5F5;
+     margin-bottom:5px;
+     clear: both;
+     font-family: Arial;
+}
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    overflow: hidden;
+}
+ul li {
+    float: left;
+    list-style: none;
+}
+ul li a{
+    background: green;
+    display: block;
+    padding: 8px 73px;
+    color: white;
+    text-decoration: none;
+    float: center;
+}
+ul li a:hover{
+    background: #023C02;
+}
+#hangxe{
+     width: 150px;
+     min-height: 400px;
+     border: 1px solid #CDCDCD;
+     float:left;
+     background-color: green;
+     margin-bottom: 5px;
+}
+#content{
+     width: 833px;
+     min-height: 478px;
+     border: 1px solid #1F6B02;
+     float: left;
+     margin-left: 5px;
+     margin-bottom: 5px;
+}
+#footer{
+     height: 100px;
+     clear: both;
+     border: 1px solid #CDCDCD;
+     background-color: green;
+     text-align: center;
+     color: white;
+}
+#Menu-hang-xe{
+     width: 150px;
+     min-height: 245px;
+     border: 1px solid #CDCDCD;
+     float:left;
+     background-color: #004C00;
+     margin-bottom: 5px;
+}
+ 
+#content-bugatti{
+     width: 833px;
+     min-height: 760px;
+     border: 1px solid green;
+     float: left;
+     margin-left: 5px;
+     margin-bottom: 5px; 
+}
+#content-ferrari{
+     width: 833px;
+     min-height: 687px;
+     border: 1px solid green;
+     float: left;
+     margin-left: 5px;
+     margin-bottom: 5px; 
+}
+#content-porsche{
+     width: 833px;
+     min-height: 626px;
+     border: 1px solid green;
+     float: left;
+     margin-left: 5px;
+     margin-bottom: 5px; 
+}
+#content-ranger-rover{
+     width: 833px;
+     min-height: 486px;
+     border: 1px solid green;
+     float: left;
+     margin-left: 5px;
+     margin-bottom: 5px; 
+}
